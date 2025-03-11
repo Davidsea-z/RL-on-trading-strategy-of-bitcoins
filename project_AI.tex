@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+	
+\usepackage[margin=1in]{geometry}		% For setting margins
+\usepackage{amsmath}				% For Math
+\usepackage{fancyhdr}				% For fancy header/footer
+\usepackage{graphicx}				% For including figure/image
+\usepackage{cancel}					% To use the slash to cancel out stuff in work
+\usepackage[margin=1in]{geometry} % Adjust margins  
+\usepackage{titlesec} % Customize section titles  
+\usepackage{setspace} % Line spacing  
+\usepackage{hyperref} % Hyperlinks  
+\usepackage{enumitem} % For better lists  
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Set up fancy header/footer
+\pagestyle{fancy}
+\fancyhead[LO,L]{MMAT 5392}
+\fancyhead[CO,C]{Mathematical Principles of Artificial Intelligence}
+\fancyhead[RO,R]{\today}
+\fancyfoot[LO,L]{}
+\fancyfoot[CO,C]{\thepage}
+\fancyfoot[RO,R]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+ 
+\begin{center}  
+    \textbf{Group Project Research Proposal} \\[0.5em]  
+    \large \textbf{Reinforcement learning on trading strategy of bitcoins}  
+\end{center}
+
+\begin{center}
+\small
+
+\textbf{Student 1 Name:} WANG Hanwei
+\textbf{ ID Number:} 1155221770
+
+\textbf{Student 2 Name:} FENG Tianyang
+\textbf{ID Number:} 1155217886
+
+\textbf{Student 3 Name:} YAO Xingmengjun
+\textbf{ID Number:} 1155218325
+
+\end{center}
+
+
+
+
+\subsection*{Proposed Methodology}
+
+The proposed methodology for applying reinforcement learning (RL) to Bitcoin trading\cite{dyhrberg2018investible} involves an RL framework where an agent interacts with the market environment. The agent observes the market state, takes actions like buying or selling Bitcoin, and receives rewards based on profitability, refining strategies through trial and error. Various RL algorithms are employed, including Q-learning (using a Q-table for state-action values), Deep Q-learning \cite{tan2017deep} (incorporating neural networks for high-dimensional states), and the Actor-Critic \cite{barto2020looking} framework (combining policy and value-based approaches). The methodology emphasizes balancing exploration (trying new strategies) and exploitation (optimizing known successful actions) to develop an optimal strategy that adapts to market conditions while leveraging past experiences.
+
+\subsection*{Expected Outcomes}
+Reinforcement learning (RL)\cite{szepesvari2022algorithms} offers promising outcomes for Bitcoin trading by adapting to the market's volatility, improving risk management, and optimizing portfolios through real-time data analysis. By incorporating external data like MACD and RVI indicators \cite{eric2009application}, RL enhances decision-making and boosts investment returns. Its ability to continuously learn and refine strategies allows RL to outperform traditional methods, which often struggle with the complexity of cryptocurrency markets.
+
+\begin{thebibliography}{11}  
+\small
+
+
+\bibitem{barto2020looking}
+Barto, A. G., Sutton, R. S., \& Anderson, C. W. Looking back on the actor--critic architecture. \textit{IEEE Transactions on Systems, Man, and Cybernetics: Systems} \textbf{51}(1), 40--50 (2020).  
+
+\bibitem{szepesvari2022algorithms}
+Szepesvári, C. Algorithms for reinforcement learning. \textit{Springer nature} (2022).
+ 
+
+\bibitem{tan2017deep}
+Tan, F., Yan, P., \& Guan, X. Deep reinforcement learning: From Q-learning to deep Q-learning. In \textit{Neural Information Processing: 24th International Conference, ICONIP 2017, Guangzhou, China, November 14--18, 2017, Proceedings, Part IV 24}, 475--483 (2017).
+
+\bibitem{dyhrberg2018investible}
+Dyhrberg, A. H., Foley, S., \& Svec, J. How investible is Bitcoin? Analyzing the liquidity and transaction costs of Bitcoin markets. \textit{Economics Letters} \textbf{171}, 140--143 (2018).
+
+\bibitem{eric2009application}
+Eric, D., Andjelic, G., \& Redzepagic, S. Application of MACD and RVI indicators as functions of investment strategy optimization on the financial market. \textit{Zbornik radova Ekonomskog fakulteta u Rijeci: časopis za ekonomsku teoriju i praksu} \textbf{27}(1), 171--196 (2009).
+
+\end{thebibliography}   
+
+\end{document}
